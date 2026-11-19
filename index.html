@@ -3492,4 +3492,13 @@ label[data-shrink="false"] + .MuiInputBase-formControl .css-op3db9:focus::-webki
 <script>
 function openChat(){ try{ if(window.qualified) qualified('showMessenger'); }catch(e){} }
 </script>
+<script id="chat-button-override">
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[href="#LM-contact"]');
+  if(!a) return;
+  e.preventDefault();
+  e.stopPropagation();
+  openChat();
+},true);
+</script>
 </body></html>
