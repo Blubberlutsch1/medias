@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>medias – Product Catalog (Mockup)</title>
+<style>
+:root{--green:#00893d;--green-d:#006b30;--ink:#1c2428;--mut:#5d6b73;--line:#dde3e6;--bg:#f4f6f7;--card:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.banner{background:#fff3cd;color:#664d03;font-size:13px;text-align:center;padding:6px}
+header{background:#fff;border-bottom:1px solid var(--line)}
+.top{display:flex;align-items:center;gap:24px;height:68px}
+.logo{font-weight:800;font-size:24px;color:var(--green);letter-spacing:-.5px}
+.logo small{color:var(--mut);font-weight:500;font-size:13px;margin-left:8px}
+.search{flex:1;display:flex}
+.search input{flex:1;padding:11px 14px;border:1px solid var(--line);border-right:0;border-radius:6px 0 0 6px;font-size:15px}
+.search button{background:var(--green);color:#fff;border:0;padding:0 20px;border-radius:0 6px 6px 0;font-size:15px;cursor:pointer}
+.util{display:flex;gap:18px;font-size:14px;color:var(--mut)}
+nav{border-top:1px solid var(--line)}
+nav .wrap{display:flex;gap:26px;height:46px;align-items:center;font-size:14px;font-weight:600;overflow-x:auto;white-space:nowrap}
+nav a:hover{color:var(--green)}
+.hero{background:linear-gradient(120deg,#0b2e1b,var(--green-d) 60%,#14a050);color:#fff;padding:56px 0}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:40px;line-height:1.1;margin:0 0 14px}
+.hero p{font-size:17px;opacity:.9;margin:0 0 24px;max-width:520px}
+.btn{display:inline-block;background:#fff;color:var(--green-d);font-weight:700;padding:12px 22px;border-radius:6px;margin-right:10px}
+.btn.o{background:transparent;color:#fff;border:1px solid #fff}
+.sel{background:#fff;color:var(--ink);border-radius:10px;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.sel h3{margin:0 0 14px}
+.sel label{display:block;font-size:12px;color:var(--mut);margin:10px 0 4px}
+.sel select,.sel input{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;font-size:14px}
+.sel button{width:100%;margin-top:16px;background:var(--green);color:#fff;border:0;padding:12px;border-radius:6px;font-weight:700;cursor:pointer}
+h2{font-size:24px;margin:44px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;transition:.15s}
+.cat:hover{border-color:var(--green);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.ico{width:56px;height:56px;border-radius:50%;background:#e6f4ec;display:grid;place-items:center;margin-bottom:12px}
+.ico svg{width:30px;height:30px;stroke:var(--green);fill:none;stroke-width:1.6}
+.cat b{display:block;margin-bottom:4px}.cat span{font-size:13px;color:var(--mut)}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.img{height:130px;background:#eef1f2;display:grid;place-items:center}
+.img svg{width:80px;height:80px;stroke:#9aa7ad;fill:none;stroke-width:1.2}
+.pb{padding:14px}
+.pb .id{font-weight:700}.pb .d{font-size:13px;color:var(--mut);margin:4px 0 10px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags i{font-style:normal;font-size:11px;background:#e6f4ec;color:var(--green-d);padding:3px 8px;border-radius:99px}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+.tool h4{margin:0 0 6px}.tool p{margin:0;font-size:14px;color:var(--mut)}
+.cta{background:var(--ink);color:#fff;border-radius:12px;padding:30px;margin:44px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.cta h3{margin:0 0 4px}.cta p{margin:0;opacity:.75}
+footer{background:#fff;border-top:1px solid var(--line);padding:30px 0;font-size:13px;color:var(--mut)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.tools{grid-template-columns:1fr}.util{display:none}.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+<div class="banner">Design mockup – not an official site. Sample content only.</div>
+
+<header>
+  <div class="wrap top">
+    <a class="logo" href="#">medias<small>Product catalog</small></a>
+    <form class="search" onsubmit="return false">
+      <input placeholder="Search designation, e.g. 6205-2RS or INA part number">
+      <button>Search</button>
+    </form>
+    <div class="util"><a href="#">EN</a><a href="#">Login</a><a href="#">Cart (0)</a></div>
+  </div>
+  <nav><div class="wrap">
+    <a href="#">Products</a><a href="#">Selection tools</a><a href="#">CAD &amp; downloads</a>
+    <a href="#">Industries</a><a href="#">Service &amp; support</a><a href="#">Where to buy</a>
+  </div></nav>
+</header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>Find the right bearing, fast.</h1>
+    <p>Search 40,000+ products, check availability, download CAD and datasheets, and calculate bearing life in one place.</p>
+    <a class="btn" href="#">Browse products</a><a class="btn o" href="#">Open selection tool</a>
+  </div>
+  <div class="sel">
+    <h3>Quick selection</h3>
+    <label>Bearing type</label>
+    <select><option>Deep groove ball bearings</option><option>Tapered roller bearings</option><option>Cylindrical roller bearings</option><option>Linear guidance</option></select>
+    <label>Bore diameter d (mm)</label><input value="25">
+    <label>Outside diameter D (mm)</label><input value="52">
+    <button>Show matching products</button>
+  </div>
+</div></section>
+
+<main class="wrap">
+  <h2>Product categories</h2>
+  <div class="grid">
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="5"/></svg></div><b>Rolling bearings</b><span>Ball, roller, needle</span></a>
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><rect x="3" y="12" width="26" height="8"/><path d="M8 12v8M16 12v8M24 12v8"/></svg></div><b>Linear technology</b><span>Guideways, rails, carriages</span></a>
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 4v6M16 22v6M4 16h6M22 16h6"/></svg></div><b>Housings &amp; units</b><span>Plummer blocks, flanged units</span></a>
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><path d="M6 24l8-8 4 4 8-10"/><circle cx="26" cy="10" r="2"/></svg></div><b>Monitoring</b><span>Condition monitoring, sensors</span></a>
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><path d="M10 4h12l-2 10h-8zM12 14l-2 14h12l-2-14"/></svg></div><b>Lubrication</b><span>Greases, lubricators</span></a>
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><path d="M4 22h24M8 22l2-10h12l2 10M12 12V8h8v4"/></svg></div><b>Automotive aftermarket</b><span>Wheel bearings, clutch</span></a>
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><path d="M16 4l11 6v12l-11 6-11-6V10z"/></svg></div><b>Accessories</b><span>Seals, rings, mounting</span></a>
+    <a class="cat" href="#"><div class="ico"><svg viewBox="0 0 32 32"><path d="M8 4h12l4 4v20H8zM20 4v4h4"/></svg></div><b>Catalogs &amp; docs</b><span>PDFs, manuals, drawings</span></a>
+  </div>
+
+  <h2>Popular products</h2>
+  <div class="grid">
+    <div class="prod"><div class="img"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="6"/></svg></div><div class="pb"><div class="id">6205-2RSR</div><div class="d">Deep groove ball bearing, sealed</div><div class="tags"><i>In stock</i><i>CAD</i></div></div></div>
+    <div class="prod"><div class="img"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="6"/></svg></div><div class="pb"><div class="id">32008-X</div><div class="d">Tapered roller bearing</div><div class="tags"><i>In stock</i><i>CAD</i></div></div></div>
+    <div class="prod"><div class="img"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="6"/></svg></div><div class="pb"><div class="id">NU210-E-XL-TVP2</div><div class="d">Cylindrical roller bearing</div><div class="tags"><i>Lead time 5d</i><i>CAD</i></div></div></div>
+    <div class="prod"><div class="img"><svg viewBox="0 0 32 32"><rect x="3" y="12" width="26" height="8"/></svg></div><div class="pb"><div class="id">KUVE25-B</div><div class="d">Linear recirculating ball bearing unit</div><div class="tags"><i>In stock</i><i>CAD</i></div></div></div>
+  </div>
+
+  <h2>Tools &amp; services</h2>
+  <div class="tools">
+    <div class="tool"><h4>Bearing calculation</h4><p>Rating life, load and friction for your application.</p></div>
+    <div class="tool"><h4>CAD download</h4><p>2D and 3D models in common formats.</p></div>
+    <div class="tool"><h4>Interchange search</h4><p>Find equivalents for competitor part numbers.</p></div>
+  </div>
+
+  <div class="cta">
+    <div><h3>Not sure which product fits?</h3><p>Chat with our team about your application.</p></div>
+    <a class="btn" href="#" onclick="openChat();return false">Talk to an expert</a>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Mockup · Contact · Legal notice · Privacy</span>
+  <span>Design mockup for demonstration only</span>
+</div></footer>
+
+<!-- =========================================================
+     QUALIFIED EMBED – replace YOUR_QUALIFIED_TOKEN with the token from
+     Qualified > Settings > Installation. The domain this page is served from
+     (e.g. yourname.github.io) must be added to your Qualified allowed domains.
+     ========================================================= -->
+<script>(function(w,q){w['QualifiedObject']=q;w[q]=w[q]||function(){(w[q].q=w[q].q||[]).push(arguments)};})(window,'qualified')</script>
+<script async src="https://js.qualified.com/qualified.js?token=YOUR_QUALIFIED_TOKEN"></script>
+<script>
+function openChat(){ try{ if(window.qualified) qualified('showMessenger'); }catch(e){} }
+</script>
+</body>
+</html>
